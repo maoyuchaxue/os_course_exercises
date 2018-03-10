@@ -37,7 +37,7 @@ BIOS固定使用16位汇编，一般只完成读入引导扇区的简单工作�
 
 - 在UEFI中的可信启动有什么作用？
 
-由于UEFI需要从外部加载驱动，因此需要验证应用程序的可信性，加载的驱动程序需要使用主板内置的可靠公钥认证，以确保其程序未被恶意修改。这一操作即又可信启动完成。
+由于UEFI需要从外部加载驱动，因此需要验证应用程序的可信性，加载的驱动程序需要使用主板内置的可靠公钥认证，以确保其程序未被恶意修改。这一操作即由可信启动完成。
 
 ## 3.3 中断、异常和系统调用比较
 - 什么是中断、异常和系统调用？
@@ -68,15 +68,15 @@ BIOS固定使用16位汇编，一般只完成读入引导扇区的简单工作�
 
 ## 3.4 linux系统调用分析
 -  通过分析[lab1_ex0](https://github.com/chyyuu/ucore_lab/blob/master/related_info/lab1/lab1-ex0.md)了解Linux应用的系统调用编写和含义。(仅实践，不用回答)
-- 通过调试[lab1_ex1](https://github.com/chyyuu/ucore_lab/blob/master/related_info/lab1/lab1-ex1.md)了解Linux应用的系统调用执行过程。(仅实践，不用回答)
+-  通过调试[lab1_ex1](https://github.com/chyyuu/ucore_lab/blob/master/related_info/lab1/lab1-ex1.md)了解Linux应用的系统调用执行过程。(仅实践，不用回答)
 
 
 ## 3.5 ucore系统调用分析 （扩展练习，可选）
 -  基于实验八的代码分析ucore的系统调用实现，说明指定系统调用的参数和返回值的传递方式和存放位置信息，以及内核中的系统调用功能实现函数。
-- 以ucore lab8的answer为例，分析ucore 应用的系统调用编写和含义。
-- 以ucore lab8的answer为例，尝试修改并运行ucore OS kernel代码，使其具有类似Linux应用工具`strace`的功能，即能够显示出应用程序发出的系统调用，从而可以分析ucore应用的系统调用执行过程。
+-  以ucore lab8的answer为例，分析ucore 应用的系统调用编写和含义。
+-  以ucore lab8的answer为例，尝试修改并运行ucore OS kernel代码，使其具有类似Linux应用工具`strace`的功能，即能够显示出应用程序发出的系统调用，从而可以分析ucore应用的系统调用执行过程。
 
- 
+
 ## 3.6 请分析函数调用和系统调用的区别
 - 系统调用与函数调用的区别是什么？
 
